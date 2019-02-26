@@ -80,12 +80,13 @@ namespace test_interpreter
 			MethodInfo[] members = creatorType.GetMethods (BindingFlags.Static | BindingFlags.Public);
 			MethodInfo methodCreator = members[0];
 
+#if true // TODO: Fix dynamic with --interpreter
+			dynamic creator = methodCreator.Invoke (null, BindingFlags.Public | BindingFlags.Static, null, new object[] { dfsValue, null }, null);
+			object maze = creator.Create (rows, columns);
+#else
 			object creator = methodCreator.Invoke (null, BindingFlags.Public | BindingFlags.Static, null, new object[] { dfsValue, null }, null);
-
-			//dynamic creator = methodCreator.Invoke (null, BindingFlags.Public | BindingFlags.Static, null, new object[] { dfsValue, null }, null);
-			//object maze = creator.Create (rows, columns);
-
 			object maze = icreatorType.InvokeMember ("Create", BindingFlags.InvokeMethod | BindingFlags.Public | BindingFlags.Instance , null, creator, new object[] { rows, columns });
+#endif
 			object sMaze = extensions.InvokeMember ("ToBoxString", BindingFlags.InvokeMethod | BindingFlags.Public | BindingFlags.Static, null, null, new object [] { maze });
 
 			outputView.Text = (string)sMaze;
