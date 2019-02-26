@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MazeInterpreter", "test_interpreter\MazeInterpreter.csproj", "{6AFE8FB7-8141-41EC-8192-18C833F4E243}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6AFE8FB7-8141-41EC-8192-18C833F4E243}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{6AFE8FB7-8141-41EC-8192-18C833F4E243}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{6AFE8FB7-8141-41EC-8192-18C833F4E243}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{6AFE8FB7-8141-41EC-8192-18C833F4E243}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{6AFE8FB7-8141-41EC-8192-18C833F4E243}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{6AFE8FB7-8141-41EC-8192-18C833F4E243}.Debug|iPhone.Build.0 = Debug|iPhone
+		{6AFE8FB7-8141-41EC-8192-18C833F4E243}.Release|iPhone.ActiveCfg = Release|iPhone
+		{6AFE8FB7-8141-41EC-8192-18C833F4E243}.Release|iPhone.Build.0 = Release|iPhone
+	EndGlobalSection
+EndGlobal
